@@ -11,40 +11,276 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <a href="/" class="logo">
-                    <img src="" alt="">
-                </a>
-                <nav class="menu">
-                    <ul class="menu-nav">
-                        <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link menu-nav__link--active">Ссылка 1</a>
-                        </li>
-                        <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 2</a>
-                        </li>
-                        <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 3</a>
-                        </li>
-                        <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 4</a>
-                        </li>
-                        <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 5</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__contacts">
-                    <a href="tel:" class="header__phone">8 (999) 999-99-99</a>
-                    <a href="mailto:" class="header__mail">test-test@test.ru</a>
-                </div>
                 <button class="btn-menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
+                <a href="/" class="logo">
+                    <img src="./assets/img/icons/logo.png" alt="">
+                </a>
+                <nav class="menu">
+                    <ul class="menu-nav">
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link menu-nav__link--active">коллекции</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link">информация</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link">PDF каталоги</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link">Преимущества LEOLINE</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link">о компании</a>
+                        </li>
+                    </ul>
+                </nav> 
+                <div class="header__contacts header__contacts--desktop">
+                    <a href="tel:88001234567" class="header__phone">8 800 123-45-67</a>
+                    <button class="btn header__btn">
+                        <span>заказать звонок</span>
+                        <img src="./assets/img/icons/lapa.svg" alt="">
+                    </button>
+                </div>
+                <div class="header__contacts header__contacts--mobile">
+                    <button class="header__icon">
+                        <img src="./assets/img/icons/white-search.svg" alt="">
+                    </button>
+                    <button class="header__icon">
+                        <img src="./assets/img/icons/white-phone.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="mobile-menu">
+                    <div class="mobile-menu__wrapper">
+                        <button class="close-menu">
+                            <img src="./assets/img/icons/close-menu.svg" alt="">
+                        </button>
+                        <ul class="menu-nav">
+                            <li class="menu-nav__item">
+                                <a href="" class="menu-nav__link menu-nav__link--active">коллекции</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="" class="menu-nav__link">информация</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="" class="menu-nav__link">PDF каталоги</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="" class="menu-nav__link">о компании</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="" class="menu-nav__link">мнформация об укладке</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="" class="menu-nav__link">информация об уходе</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
             </div>
         </div>
     </header>
+
+    <section class="section">
+        <div class="hero">
+            <div class="hero__wrapper">
+                <div class="search-input">
+                    <button class="search-input__submit"><img src="./assets/img/icons/search.svg" alt=""></button>
+                    <input type="text" name="search" class="search-input__input" placeholder="Поиск товара" autocomplete="off">
+                </div>
+                <div class="filter-input">
+                    <div class="filter-input__item">
+                        <div class="filter-input__top">
+                            <span class="filter-input__name">Цвет</span>
+                            <svg width="12" height="7" class="filter-input__icon" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.40755 6.71417L0.693381 2L1.87171 0.821666L5.99672 4.94667L10.1217 0.821667L11.3 2L6.58588 6.71417C6.42961 6.87039 6.21769 6.95815 5.99672 6.95815C5.77575 6.95815 5.56382 6.87039 5.40755 6.71417Z"/>
+                            </svg>
+                        </div>
+                        <div class="filter-input__body">
+
+                        </div>
+                    </div>
+                    <div class="filter-input__item">
+                        <div class="filter-input__top">
+                            <span class="filter-input__name">Коллекция</span>
+                            <svg width="12" height="7" class="filter-input__icon" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.40755 6.71417L0.693381 2L1.87171 0.821666L5.99672 4.94667L10.1217 0.821667L11.3 2L6.58588 6.71417C6.42961 6.87039 6.21769 6.95815 5.99672 6.95815C5.77575 6.95815 5.56382 6.87039 5.40755 6.71417Z"/>
+                            </svg>
+                        </div>
+                        <div class="filter-input__body">
+
+                        </div>
+                    </div>
+                    <div class="filter-input__item">
+                        <div class="filter-input__top">
+                            <span class="filter-input__name">Общая толщина</span>
+                            <svg width="12" height="7" class="filter-input__icon" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.40755 6.71417L0.693381 2L1.87171 0.821666L5.99672 4.94667L10.1217 0.821667L11.3 2L6.58588 6.71417C6.42961 6.87039 6.21769 6.95815 5.99672 6.95815C5.77575 6.95815 5.56382 6.87039 5.40755 6.71417Z"/>
+                            </svg>
+                        </div>
+                        <div class="filter-input__body">
+
+                        </div>
+                    </div>
+                    <div class="filter-input__item">
+                        <div class="filter-input__top">
+                            <span class="filter-input__name">Основа</span>
+                            <svg width="12" height="7" class="filter-input__icon" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.40755 6.71417L0.693381 2L1.87171 0.821666L5.99672 4.94667L10.1217 0.821667L11.3 2L6.58588 6.71417C6.42961 6.87039 6.21769 6.95815 5.99672 6.95815C5.77575 6.95815 5.56382 6.87039 5.40755 6.71417Z"/>
+                            </svg>
+                        </div>
+                        <div class="filter-input__body">
+
+                        </div>
+                    </div>
+                    <div class="filter-input__item">
+                        <div class="filter-input__top">
+                            <span class="filter-input__name">Еще фильтры</span>
+                            <button class="filter-input__more">
+                                <img src="./assets/img/icons/more.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="filter-input__body">
+
+                        </div>
+                    </div>
+
+                    <!-- Найти товар -->
+                    <button class="btn filter-input__btn">найти товар</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--top_md">
+        <div class="container">
+            <h2>Коллекции</h2>
+            <div class="container__inner">
+                <div class="collection">
+                    <a href="/" class="collection__item">
+                        <img src="./assets/img/photo/1.png" class="collection__img" alt="">
+                        <div class="collection__description">
+                            <p class="collection__name">ECOTEX</p>
+                        </div>
+                    </a>
+                    <a href="/" class="collection__item">
+                        <img src="./assets/img/photo/2.png" class="collection__img" alt="">
+                        <div class="collection__description">
+                            <p class="collection__name">TEXPRO</p>
+                        </div>
+                    </a>
+                    <a href="/" class="collection__item">
+                        <img src="./assets/img/photo/3.png" class="collection__img" alt="">
+                        <div class="collection__description">
+                            <p class="collection__name">VERDI</p>
+                        </div>
+                    </a>
+                    <a href="/" class="collection__item collection__item--large">
+                        <img src="./assets/img/photo/4.png" class="collection__img" alt="">
+                        <div class="collection__description">
+                            <p class="collection__name">ECO</p>
+                        </div>
+                    </a>
+                    <a href="/" class="collection__item collection__item--large">
+                        <img src="./assets/img/photo/5.png" class="collection__img" alt="">
+                        <div class="collection__description">
+                            <p class="collection__name">BASSO</p>
+                        </div>
+                    </a>
+                    <a href="/" class="collection__item">
+                        <img src="./assets/img/photo/6.png" class="collection__img" alt="">
+                        <div class="collection__description collection__description--last">
+                            <p class="collection__name">INTER</p>
+                        </div>
+                    </a>
+                    <a href="/" class="collection__item">
+                        <img src="./assets/img/photo/7.png" class="collection__img" alt="">
+                        <div class="collection__description collection__description--last">
+                            <p class="collection__name">mars</p>
+                        </div>
+                    </a>
+                    <a href="/" class="collection__item">
+                        <img src="./assets/img/photo/8.png" class="collection__img" alt="">
+                        <div class="collection__description collection__description--last">
+                            <p class="collection__name">CENTRA</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__left">
+                        <a href="/" class="logo">
+                            <img src="./assets/img/icons/footer-logo.png" alt="">
+                        </a>
+                        <div class="footer__contacts">
+                            <a href="tel:88001234567" class="footer__phone">8 800 123-45-67</a>
+                            <button class="btn footer__btn">
+                                <span>заказать звонок</span>
+                                <img src="./assets/img/icons/lapa.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__column">
+                            <ul class="footer-menu">
+                                <li class="footer-menu__list">
+                                    <a href="" class="footer-menu__link">коллекции</a>
+                                </li>
+                                <li class="footer-menu__list">
+                                    <a href="" class="footer-menu__link">PDF каталоги</a>
+                                </li>
+                                <li class="footer-menu__list">
+                                    <a href="" class="footer-menu__link">документы</a>
+                                </li>
+                                <li class="footer-menu__list">
+                                    <a href="" class="footer-menu__link">банк знаний</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__column">
+                            <ul class="footer-menu">
+                                <li class="footer-menu__list">
+                                    <a href="" class="footer-menu__link">преимущества leoline</a>
+                                </li>
+                                <li class="footer-menu__list">
+                                    <a href="" class="footer-menu__link">Информация об укладке</a>
+                                </li>
+                                <li class="footer-menu__list">
+                                    <a href="" class="footer-menu__link">Информация о уходе</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__row">
+                    <p class="copyright">© leoline 2024</p>
+                    <div class="footer__right">
+                        <div class="footer__column">
+                            <a href="" class="footer__link">Политика конфиденциальности</a>
+                        </div>
+                        <div class="footer__column">
+                            <a href="" class="footer__link">Настройки файлов cookie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./assets/libs/jquery.min.js"></script>
     <script src="./assets/libs/swiper-bundle.min.js"></script>

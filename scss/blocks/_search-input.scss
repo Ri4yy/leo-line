@@ -1,0 +1,20 @@
+.search-input {
+    display: flex;
+
+    height: auto;
+    width: min(100%, 430px);
+
+    &__submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        
+        width: 50px;
+        height: 100%;
+    }
+    &__input {
+        height: 100%;
+        width: 100%;
+    }
+}

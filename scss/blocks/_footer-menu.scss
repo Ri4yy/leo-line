@@ -1,0 +1,15 @@
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__list {
+        display: flex;
+    }
+    &__link {
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}

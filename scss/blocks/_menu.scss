@@ -1,7 +1,7 @@
 .menu {
     display: inline-flex;
     
-    @media(max-width: $breakpoint768) {
+    @media(max-width: $breakpoint1280) {
         display: none;
     }
 
@@ -59,17 +59,17 @@
 
     position: relative;
 
-    width: 14px;
-    height: 10px;
+    width: 18px;
+    height: 16px;
 
-    @media(max-width: $breakpoint768) {
+    @media(max-width: $breakpoint1280) {
         display: flex;
     }
 
     & span {
         position: absolute;
 
-        background: $main-color;
+        background: #000;
         border-radius: 100px;
         width: 100%;
         height: 2px;
@@ -82,6 +82,7 @@
             transform-origin: center;
         }
         &:nth-of-type(2) {
+            width: 12px;
             top: 50%;
             transform: translateY(-50%);    
             left: 0;
@@ -104,7 +105,7 @@
                 top: auto;
             }
             &:nth-of-type(2) {
-                transform: translateX(100%);
+                transform: translateX(200%);
             }
             &:last-child {
                 display: block;

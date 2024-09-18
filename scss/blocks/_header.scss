@@ -3,34 +3,85 @@
     background: #fff;
 
     &__wrapper {
-        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 29px 0;
+        padding: 24px 0;
         z-index: 2;
 
-        @media(max-width: $breakpoint768) {
-            padding: 20px 0;
-        }
-        @media(max-width: $breakpoint480) {
-            padding: 16px 0;
-        }
     }
 
     &__contacts {
         display: flex;
-        flex-direction: column;
-        align-items: end;
-    }
-    &__mail {
+        gap: 20px;
 
+        @media(max-width: $breakpoint1440) {
+            gap: 10px;
+        }
+        @media(max-width: $breakpoint1280) {
+            margin-left: auto;
+        }
+        @media(max-width: $breakpoint768) {
+            gap: 14px;
+        }
+
+        &--desktop {
+            @media(max-width: $breakpoint768) {
+                display: none;
+            }
+        }
+        &--mobile {
+            display: none;
+
+            @media(max-width: $breakpoint768) {
+                display: flex;
+            }
+        }
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: $main-color;
     }
     &__phone {
+        position: relative;
 
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $black;
+
+        &::before {
+            content: url('../assets/img/icons/phone.svg');
+            height: 15px;
+        }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 20px 16px 24px;
     }
 }
 
 .logo {
     
+    @media(max-width: $breakpoint1440) {
+        max-width: 140px;
+    }
+    @media(max-width: $breakpoint1280) {
+        margin-left: 15px;
+    }
+    @media(max-width: $breakpoint768) {
+        max-width: 120px;
+    }
 }

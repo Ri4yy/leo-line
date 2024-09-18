@@ -1,0 +1,70 @@
+.footer {
+    margin-top: 140px;
+    background: $dark-color;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding: 72px 0;
+    }
+    &__bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 42px 0;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between
+    }
+    &__left {
+
+    }
+    &__right {
+        display: flex;
+        width: min(100%, 810px);
+    }
+    &__column {
+        width: 50%;
+    }
+
+    &__contacts {
+        margin-top: 38px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__phone {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+
+        &::before {
+            content: url('../assets/img/icons/phone.svg');
+            height: 18px;
+        }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 18px 20px 18px 24px;
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.copyright {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}

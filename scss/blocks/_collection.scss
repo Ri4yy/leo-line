@@ -1,0 +1,52 @@
+.collection {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 30px;
+    row-gap: 60px;
+
+    &__item {
+        position: relative;
+        display: flex;
+
+        grid-column: span 2;
+        border-radius: 8px;
+        overflow: hidden;
+
+        &--large {
+            grid-column: span 3;
+            max-height: 500px;
+
+            & .collection__description {
+                background: $secondary-color;
+            }
+        }
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+    &__description {
+        position: absolute;
+        bottom: 0;
+        height: 76px;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: $accent-color;
+
+        &--last {
+            background: #C5C5C4;
+        }
+    }
+    &__name {
+        font-family: $font-title;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
