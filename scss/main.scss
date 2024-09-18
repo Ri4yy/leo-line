@@ -4,20 +4,11 @@
 @import "./base/base";
 // Blocks
 @import "./blocks/header";
+@import "./blocks/modal";
 @import "./blocks/menu";
 @import "./blocks/menu-nav";
-@import "./blocks/modal";
-@import "./blocks/footer";
 @import "./blocks/btn";
-@import "./blocks/hero";
-@import "./blocks/ticker";
-@import "./blocks/cases";
-@import "./blocks/services";
-@import "./blocks/form";
-@import "./blocks/benefits";
-@import "./blocks/partners";
-@import "./blocks/info";
-@import "./blocks/menu";
-@import "./blocks/modal";
-@import "./blocks/crm-price";
-@import "./blocks/b-service";
+// Custom
+@import "./blocks/custom-checkbox";
+@import "./blocks/custom-radio";
+

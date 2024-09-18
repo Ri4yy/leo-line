@@ -1,6 +1,5 @@
 .header {
     position: relative;
-<<<<<<< HEAD
     background: #fff;
 
     &__wrapper {
@@ -34,28 +33,4 @@
 
 .logo {
     
-=======
-    margin-top: 20px;
-
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 0;
-    }
-    &__right {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-
-        & .btn {
-            @media(max-width: $breakpoint480) {
-                display: none;
-            }
-        }
-    }
-    &__burger-menu {
-        display: inline-flex;
-    }
->>>>>>> cbfdbc6787f6808193dab02f741b0a99301051f6
 }
