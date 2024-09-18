@@ -1,0 +1,134 @@
+<<<<<<< HEAD
+@import url("../assets/fonts/stylesheet.css");
+
+html,
+body {
+    font-family: '';
+    scroll-behavior: smooth;
+}
+
+// Заголовки
+h1 {
+    color: $main-color;
+}
+h2 {
+    color: $main-color;
+}
+h3 {
+    color: $main-text;
+}
+
+// База
+.container {
+    max-width: $container-width;
+    width: 100%;
+    margin: 0 auto;
+
+    &__inner {
+        margin-top: 40px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 24px;
+        }
+    }
+
+    @media(max-width: $container-width) {
+        padding: 0 $padding-md;
+    }
+    @media(max-width: $breakpoint768) {
+        padding: 0 $padding-sm;
+    }
+}
+.section {
+    margin-top: $section-top;
+
+    @media(max-width: $breakpoint768) {
+        margin-top: 90px;
+    }
+}
+
+.left-padding {
+    padding-left: calc((100vw - $section-top) / 2);
+
+    @media(max-width: $container-width) {
+        padding-left: $padding-md;
+    }
+    @media(max-width: $breakpoint768) {
+        padding-left: $padding-sm;
+    }
+}
+
+=======
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+html,
+body {
+    overflow-x: hidden;
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    flex-direction: column;
+    // min-height: 100vh;
+    height: 100%;
+}
+.container {
+    max-width: 1328px;
+    margin: 0 auto;
+
+    &__inner {
+        margin-top: 48px;
+
+        @media(max-width: $breakpoint480) {
+            margin-top: 24px;
+        }
+    }
+    // @media (max-width: $breakpoint1440) {
+    //     max-width: 980px;
+    // }
+    // @media (max-width: $breakpoint1024) {
+    //     max-width: 728px;
+    // }
+    @media (max-width: 1360px) {
+        padding: 0 16px !important;
+    }
+}
+.title-h2 {
+    font-weight: 300;
+    font-size: 40px;
+    color: #000;
+    width: fit-content;
+
+    & span {
+        font-style: italic;
+        font-weight: 500;
+        color: $text-blue;
+    }
+
+    @media(max-width: $breakpoint1440) {
+        font-size: 32px;
+    }
+    @media(max-width: $breakpoint480) {
+        font-size: 24px;
+    }
+}
+.section {
+    position: relative;
+    margin-top: 160px;
+
+    @media(max-width: $breakpoint1024) {
+        margin-top: 120px;
+    }
+    @media(max-width: $breakpoint768) {
+        margin-top: 80px;
+    }
+    @media(max-width: $breakpoint480) {
+        margin-top: 60px;
+    }
+}
+.section-top {
+    margin-top: 120px;
+
+}
+>>>>>>> cbfdbc6787f6808193dab02f741b0a99301051f6
+.no-scroll {
+    overflow: hidden;
+}

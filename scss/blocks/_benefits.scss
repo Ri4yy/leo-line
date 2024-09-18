@@ -1,0 +1,156 @@
+.benefits {
+    display: grid;
+    gap: 36px;
+    margin-top: 48px;
+
+    &__item:nth-child(odd) {
+        padding: 80px 110px 0 100px;
+
+        @media(max-width: $breakpoint1280) {
+            padding: 80px 80px 0 60px;
+        }
+        @media(max-width: $breakpoint1024) {
+            padding: 44px 80px 0 60px;
+        }
+    } 
+    &__item:nth-child(even) {
+        padding: 80px 100px 0 140px;
+
+        @media(max-width: $breakpoint1280) {
+            padding: 80px 80px 0 80px;
+        }
+        @media(max-width: $breakpoint1024) {
+            padding: 44px 50px 0 80px;
+        }
+    }
+
+    &__item {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        min-height: 360px;
+        border-radius: 14px;
+        gap: 40px;
+
+        &--color_light {
+            background: #CAD5E7;
+        }
+        &--color_light-blue {
+            background: #7F9ED0;
+        }
+        &--color_main-blue {
+            background: $main-blue;
+        }
+        &--color_dark-blue {
+            background: $dark-blue;
+        }
+
+        &--color_light .benefits__description {
+            max-width: 380px;
+
+            @media(max-width: $breakpoint1280) {
+                max-width: 348px;
+            }
+            @media(max-width: $breakpoint1024) {
+                max-width: 285px;
+            }
+        }
+        &--color_light-blue .benefits__description {
+            max-width: 390px;
+        }
+        &--color_main-blue .benefits__description {
+            max-width: 440px;
+
+            @media(max-width: $breakpoint1280) {
+                max-width: 348px;
+            }
+        }
+        &--color_dark-blue .benefits__description {
+            max-width: 440px;
+
+            @media(max-width: $breakpoint1024) {
+                max-width: 312px;
+            }
+        }
+
+        &--color_light .benefits__description .benefits__title,
+        &--color_light .benefits__description .benefits__text {
+            color: $dark-blue;
+        }
+
+        @media(max-width: $breakpoint1280) {
+            min-height: 320px;
+        }
+        @media(max-width: $breakpoint1024) {
+            min-height: 230px;
+        }
+        @media(max-width: $breakpoint768) {
+            border-radius: unset;
+            min-height: auto;
+            padding: 0 !important;
+            background: none;
+        }
+    }
+
+    &__description {
+        @media(max-width: $breakpoint768) {
+            max-width: 100% !important;
+        }
+    }
+
+    &__number {
+        max-width: 500px;
+        margin-bottom: -200px;
+        font-weight: 400;
+        font-size: 460px;
+        line-height: 1;
+        color: #fff;
+
+        @media(max-width: $breakpoint1280) {
+            font-size: 360px;
+        }
+        @media(max-width: $breakpoint1024) {
+            font-size: 240px;
+            transform: translateY(30px);
+        }
+        @media(max-width: $breakpoint768) {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: white;
+
+        @media(max-width: $breakpoint1280) {
+            font-size: 20px;
+        }
+        @media(max-width: $breakpoint1024) {
+            font-size: 16px;
+        }
+        @media(max-width: $breakpoint768) {
+            color: #343434;
+        }
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: white;
+
+        @media(max-width: $breakpoint1280) {
+            font-size: 14px;
+        }
+        @media(max-width: $breakpoint1024) {
+            margin-top: 8px;
+            font-size: 12px;
+        }
+        @media(max-width: $breakpoint768) {
+            color: #343434;
+        }
+    }
+}

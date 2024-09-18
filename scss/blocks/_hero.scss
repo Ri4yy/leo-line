@@ -1,0 +1,185 @@
+.hero {
+ 
+    &__wrapper {
+        padding: 160px 0 200px 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &::before {
+            content: url('../img/bg/bg-hero_left.svg');
+            position: absolute;
+            top: -60px;
+            left: -300px;
+            z-index: -1;
+
+            @media(max-width: $breakpoint1024) {
+                top: -30px;
+                left: -350px;
+            }
+            @media(max-width: $breakpoint768) {
+                left: -400px;
+            }
+            @media(max-width: $breakpoint560) {
+                top: -60px;
+                left: -500px;
+            }
+        }
+
+        &::after {
+            content: url('../img/bg/bg-hero_right.svg');
+            position: absolute;
+            bottom: -200px;
+            right: -300px;
+            z-index: -1;
+
+            @media(max-width: $breakpoint1024) {
+                right: -600px;
+            }
+            @media(max-width: $breakpoint560) {
+                display: none;
+            }
+        }
+
+        @media(max-width: $breakpoint1024) {
+            padding: 100px 0;
+            flex-direction: column;
+            align-items: start;
+        }
+        @media(max-width: $breakpoint768) {
+            padding: 100px 0;
+        }
+    }
+    &__description {
+        max-width: 640px;
+    }
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 50%;
+        flex-shrink: 0;
+        width: 260px;
+        height: 260px;
+
+        & p {
+            text-wrap: balance;
+            font-weight: 300;
+            font-size: 20px;
+            text-align: center;
+            color: #000;
+
+            @media(max-width: $breakpoint1024) {
+                font-size: 14px;
+                text-align: start;
+            }
+        }
+
+        @media(max-width: $breakpoint1024) {
+            margin-top: 20px;
+            border: unset;
+            width: unset;
+            height: unset;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 24px;
+            max-width: 145px;
+        }
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 100px;
+        text-transform: uppercase;
+        color: #000;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 80px;
+        }
+        @media(max-width: $breakpoint560) {
+            font-size: 60px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 44px;
+        }
+    }
+    &__subtitle {
+        font-weight: 200;
+        font-size: 47px;
+        color: #0b0b0b;
+        margin-top: 12px;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 40px;
+        }
+        @media(max-width: $breakpoint560) {
+            font-size: 32px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-weight: 800;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #000;
+            margin-top: 0;
+        }
+    }
+
+    
+}
+
+.hero-dignity {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 48px;
+
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        @media(max-width: $breakpoint768) {
+            gap: 8px;
+        }
+        @media(max-width: $breakpoint480) {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 41px;
+        color: #000;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 32px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 20px;
+        }
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 16px;
+        color: #000;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 12px;
+        }
+    }
+
+    @media(max-width: $breakpoint768) {
+        gap: 20px;
+    }
+    @media(max-width: $breakpoint560) {
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+    }
+    @media(max-width: $breakpoint480) {
+        grid-template-columns: 90px 80px 40px;
+        gap: 28px;
+        margin-top: 24px;
+    }
+}

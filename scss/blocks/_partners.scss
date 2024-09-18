@@ -1,0 +1,17 @@
+.partners {
+    margin-top: 88px;
+
+    @media(max-width: $breakpoint1280) {
+        margin-top: 48px;
+    }
+}
+
+.swiper-partners {
+
+    &__slide {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        height: auto !important;
+    }
+} 
