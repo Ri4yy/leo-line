@@ -1,0 +1,50 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @media(max-width: $breakpoint768) {
+        gap: 20px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 6px;
+
+        @media(max-width: $breakpoint375) {
+            gap: 2px;
+        }
+    }
+    &__item {
+        display: flex;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        color: $main-text;
+
+        @media(max-width: $breakpoint375) {
+            width: 28px;
+            height: 28px;
+            font-size: 14px;
+        }
+
+        &--active {
+            background: $main-color;
+            color: #fff;
+        }
+    }
+    &__arrow {
+        display: flex;
+    }
+}

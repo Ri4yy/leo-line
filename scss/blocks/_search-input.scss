@@ -1,8 +1,13 @@
 .search-input {
     display: flex;
+    flex: auto;
 
     height: auto;
-    width: min(100%, 430px);
+    // width: min(100%, 430px);
+
+    @media(max-width: $breakpoint768) {
+        height: 48px;
+    }
 
     &__submit {
         display: flex;
@@ -12,9 +17,15 @@
         
         width: 50px;
         height: 100%;
+
+        @media(max-width: $breakpoint768) {
+            width: 40px;
+        }
     }
     &__input {
         height: 100%;
         width: 100%;
+        
+        padding: 0 20px 0 0;
     }
 }

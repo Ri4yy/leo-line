@@ -1,8 +1,26 @@
 .collection {
+    $container-md: 600px;
+
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     column-gap: 30px;
     row-gap: 60px;
+
+    @media(max-width: $breakpoint1024) {
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+    @media(max-width: $breakpoint768) {
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+    @media(max-width: $container-md) {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+    }
+    @media(max-width: $breakpoint480) {
+        gap: 7px;
+    }
 
     &__item {
         position: relative;
@@ -12,12 +30,63 @@
         border-radius: 8px;
         overflow: hidden;
 
+        @media(max-width: $container-md) {
+            grid-column: auto;
+            height: 155px;
+        }
+
+        &--grey {
+            & .collection__description {
+                background: $accent-color;
+
+                @media(max-width: $container-md) {
+                    background: rgba(134, 147, 161, .8);
+                }
+            }
+            & .collection-description__title {
+                color: $accent-color;
+            }
+        }
+
         &--large {
             grid-column: span 3;
             max-height: 500px;
 
+            @media(max-width: $container-md) {
+                grid-column: auto;
+                max-height: 155px;
+            }
+        }
+
+        &--gold {
             & .collection__description {
                 background: $secondary-color;
+
+                @media(max-width: $container-md) {
+                    background: rgba(235, 181, 106, .8);
+                }
+            }
+            & .collection-description__title {
+                color: $secondary-color;
+            }
+        }
+
+        &--silver {
+            & .collection__description {
+                background: #C5C5C4;
+
+                @media(max-width: $container-md) {
+                    background: rgba(197, 197, 196, .8);
+                }
+            }
+            & .collection-description__title {
+                color: #C5C5C4;
+            }
+        }
+
+        &:nth-of-type(3), &:last-child {
+            @media(max-width: $container-md) {
+                grid-column: span 2;
             }
         }
     }
@@ -35,10 +104,21 @@
         justify-content: center;
         align-items: center;
 
-        background: $accent-color;
+        @media(max-width: $breakpoint1024) {
+            height: 64px;
+        }
+        @media(max-width: $breakpoint768) {
+            height: 48px;
+        }
+        @media(max-width: $container-md) {
+            height: 32px;
+            width: fit-content;
+            border-radius: 6px;
+            padding: 8px 14px 10px 14px;
 
-        &--last {
-            background: #C5C5C4;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
     &__name {
@@ -48,5 +128,15 @@
         line-height: 140%;
         text-transform: uppercase;
         color: #fff;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 18px;
+        }
+        @media(max-width: $breakpoint768) {
+            font-size: 16px;
+        }
+        @media(max-width: $container-md) {
+            font-size: 14px;
+        }
     }
 }

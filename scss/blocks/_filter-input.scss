@@ -1,6 +1,12 @@
 .filter-input {
     display: flex;
 
+    @media(max-width: $breakpoint768) {
+        height: 48px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+
     &__item {
         position: relative;
 
@@ -10,6 +16,13 @@
         &:not(:last-of-type) {
             border-right: 1px solid rgba(0, 0, 0, 0.1);
         }
+
+        @media(max-width: $breakpoint1280) {
+            padding: 0 10px;
+        }
+        @media(max-width: $breakpoint768) {
+            flex: auto;
+        }
     }
     &__top {
         display: flex;
@@ -17,6 +30,15 @@
         gap: 30px;
 
         cursor: pointer;
+
+        @media(max-width: $breakpoint1280) {
+            gap: 20px;
+        }
+        @media(max-width: $breakpoint768) {
+            justify-content: space-between;
+            width: -webkit-fill-available;
+            gap: 5px;
+        }
     }
     &__body {
         display: none;
@@ -33,6 +55,8 @@
 
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
+
+        z-index: 2;
 
         &.open {
             display: block;
@@ -52,6 +76,10 @@
         color: $dark-color;
         pointer-events: none;
 
+        @media(max-width: $breakpoint1280) {
+            font-size: 13px;
+        }
+
         &.active {
             color: $main-color;
         }
@@ -70,6 +98,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-shrink: 0;
 
         width: 24px;
         height: 24px;
@@ -80,5 +109,17 @@
         position: absolute;
         right: -180px;
         padding: 22px 34px;
+
+        @media(max-width: 1480px) {
+            top: 64px;
+            right: 0;
+        }
+        @media(max-width: $breakpoint1280) {
+            top: 52px;
+            padding: 16px 30px;
+        }
+        @media(max-width: $breakpoint768) {
+            top: 100px;
+        }
     }
 }

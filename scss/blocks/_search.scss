@@ -1,0 +1,36 @@
+.search {
+    max-width: 1080px;
+    margin: 0 auto;
+
+    @media(max-width: 1128px) {
+        padding: 0 24px;
+        margin: 0;
+    }
+
+    &__top {
+        display: flex;
+        gap: 6px;
+        height: 60px;
+        width: 100%;
+
+        @media(max-width: $breakpoint768) {
+            height: 48px;
+        }
+    }
+    &__center {
+        margin-top: 60px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 30px;
+        }
+    }
+    &__bottom {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 20px;
+        }
+    }
+}

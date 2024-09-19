@@ -6,21 +6,73 @@
         display: flex;
         justify-content: space-between;
         padding: 72px 0;
+
+        @media(max-width: $breakpoint768) {
+            padding: 36px 0 30px;
+        }
+
+        & .footer__row {
+            @media(max-width: $breakpoint768) {
+                flex-direction: column;
+            }
+        }
+        & .footer__right   {
+            @media(max-width: $breakpoint768) {
+                margin-top: 30px;
+                width: 100%;
+            }
+        }
     }
     &__bottom {
+        $container-md: 540px;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding: 42px 0;
+
+        @media(max-width: $breakpoint768) {
+            padding: 28px 0;
+        }
+
+        & .footer__right   {
+            flex-direction: column;
+            row-gap: 4px;
+
+            @media(max-width: $breakpoint768) {
+                width: 50%;
+            }
+            @media(max-width: $container-md) {
+                margin-top: 14px;
+                row-gap: 14px;
+            }
+            @media(max-width: $breakpoint480) {
+                width: 100%;
+            }
+        }
+        & .footer__row {
+            align-items: center;
+
+            @media(max-width: $container-md) {
+                flex-direction: column;
+            }
+        }
+        & .footer__column {
+            width: 100%;
+
+            @media(max-width: $container-md) {
+                text-align: center;
+            }
+        }
     }
     &__row {
         display: flex;
-        justify-content: space-between
-    }
-    &__left {
-
+        justify-content: space-between;
     }
     &__right {
         display: flex;
-        width: min(100%, 810px);
+        width: calc((810px / $container-width) * 100%);
+
+        @media(max-width: $breakpoint1024) {
+            width: 40%;
+        }
     }
     &__column {
         width: 50%;
@@ -31,6 +83,10 @@
         display: flex;
         align-items: center;
         gap: 20px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 30px;
+        }
     }
     &__phone {
         position: relative;
@@ -44,9 +100,20 @@
         text-transform: uppercase;
         color: #fff;
 
+        @media(max-width: $breakpoint768) {
+            font-size: 15px;
+        }
+        @media(max-width: $breakpoint375) {
+            font-size: 13px;
+        }
+
         &::before {
             content: url('../assets/img/icons/phone.svg');
             height: 18px;
+
+            @media(max-width: $breakpoint480) {
+                display: none;
+            }
         }
     }
     &__btn {
@@ -54,6 +121,21 @@
         align-items: center;
         gap: 10px;
         padding: 18px 20px 18px 24px;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 12px;
+            padding: 14px 16px;
+        }
+        @media(max-width: $breakpoint375) {
+            font-size: 11px;
+            padding: 12px 10px;
+        }
+
+        & img {
+            @media(max-width: $breakpoint768) {
+                display: none;
+            }
+        }
     }
 
     &__link {

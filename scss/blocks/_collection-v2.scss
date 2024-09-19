@@ -1,0 +1,186 @@
+.collection-v2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 30px;
+    row-gap: 60px;
+
+    @media(max-width: $breakpoint1024) {
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+    @media(max-width: $breakpoint768) {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+    @media(max-width: $breakpoint480) {
+        grid-template-columns: 1fr;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+
+        grid-column: span 2;
+        border-radius: 8px;
+        overflow: hidden;
+
+        @media(max-width: $breakpoint768) {
+            grid-column: auto;
+            height: auto;
+
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px 8px 0 0;
+        }
+
+        &--grey {
+
+            & .collection-v2__description {
+                background: $accent-color;
+            }
+            & .collection-description__title {
+                color: $accent-color;
+            }
+        }
+
+        &--large {
+            grid-column: span 3;
+            max-height: 500px;
+
+            @media(max-width: $breakpoint768) {
+                grid-column: auto;
+            }
+
+            & .collection-description__block {
+                @media(max-width: $breakpoint1280) {
+                    max-height: 100px;
+                }
+                @media(max-width: $breakpoint768) {
+                    max-height: 120px;
+                }
+                @media(max-width: $breakpoint480) {
+                    max-height: 100%;
+                }
+            }
+        }
+
+        &--gold {
+            & .collection-v2__description {
+                background: $secondary-color;
+            }
+            & .collection-description__title {
+                color: $secondary-color;
+            }
+        }
+        &--silver {
+            & .collection-v2__description {
+                background: #C5C5C4;
+            }
+            & .collection-description__title {
+                color: #C5C5C4;
+            }
+        }
+
+        @media(hover: hover) {
+            &:hover {
+                & .collection-v2__hidden {
+                    display: block;
+                }
+                & .hits {
+                    z-index: 2;
+                    inset: auto 24px 24px auto;
+    
+                    @media(max-width: $breakpoint1024) {
+                        inset: auto 14px 14px auto;
+                    }
+                }
+    
+                &.collection-v2__item--grey {
+                    & .hits {
+                        background: $accent-color;
+                        
+                        & .hits__title {
+                            color: #fff;
+                        }
+    
+                    }
+                }
+                &.collection-v2__item--gold {
+                    & .hits {
+                        background: $secondary-color;
+                        
+                        & .hits__title {
+                            color: #fff;
+                        }
+    
+                    }
+                }
+                &.collection-v2__item--silver {
+                    & .hits {
+                        background: #C5C5C4;
+                        
+                        & .hits__title {
+                            color: #fff;
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+    &__link {
+        position: relative;
+    }
+    &__hidden {
+        position: absolute;
+        inset: 0 0 0 0;
+        display: none;
+
+        @media(max-width: $breakpoint768) {
+            position: static;
+            display: flex;
+            height: 100%;
+        }
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        
+        @media(max-width: $breakpoint768) {
+            height: 155px;
+            border-radius: 8px;
+        }
+    }
+    &__description {
+        position: absolute;
+        bottom: 0;
+        height: 76px;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media(max-width: $breakpoint1024) {
+            height: 64px;
+        }
+        @media(max-width: $breakpoint768) {
+            display: none;
+        }
+    }
+    &__name {
+        font-family: $font-title;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #fff;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 18px;
+        }
+        @media(max-width: $breakpoint768) {
+            font-size: 16px;
+        }
+    }
+}

@@ -3,6 +3,10 @@
     flex-direction: column;
     gap: 24px;
 
+    @media(max-width: $breakpoint480) {
+        gap: 16px;
+    }
+
     &__list {
         display: flex;
     }
@@ -11,5 +15,9 @@
         font-size: 14px;
         text-transform: uppercase;
         color: #fff;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 12px;
+        }
     }
 }

@@ -1,0 +1,107 @@
+.collection-description {
+    padding: 40px;
+    backdrop-filter: blur(100px);
+    background: rgba(36, 36, 36, 0.8);
+    height: 100%;
+
+    @media(max-width: $breakpoint1280) {
+        padding: 20px;
+    }
+    @media(max-width: $breakpoint768) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        margin-top: 10px;
+        background: transparent;
+        padding: 0;
+    }
+
+    &__title {
+        font-family: $font-title;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 124%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+
+        @media(max-width: $breakpoint1440) {
+            font-size: 28px;
+        }
+        @media(max-width: $breakpoint768) {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 136%;
+            text-transform: capitalize;
+            color: $black !important;
+        }
+    }
+    &__block {
+
+        @media(max-width: $breakpoint1280) {
+            max-height: 250px;
+            overflow-y: scroll;
+        }
+        @media(max-width: $breakpoint1024) {
+            max-height: 124px;
+        }
+        @media(max-width: $breakpoint768) {
+            max-height: 120px;
+            margin-bottom: 6px;
+        }
+        @media(max-width: $breakpoint480) {
+            max-height: 100%;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 157%;
+        color: #fff;
+
+        @media(max-width: $breakpoint1440) {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        @media(max-width: $breakpoint768) {
+            margin-top: 6px;
+            font-size: 12px;
+            color: $main-text;
+        }
+    }
+    &__link {
+        display: block;
+        margin-top: 24px;
+        width: fit-content;
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 100px;
+        padding: 16px 20px 16px 24px;
+
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #fff;
+
+        @media(max-width: $breakpoint1440) {
+            margin-top: 16px;
+            padding: 12px 20px 12px 24px;
+        }
+        @media(max-width: $breakpoint1024) {
+            margin-top: 10px;
+        }
+        @media(max-width: $breakpoint768) {
+            margin-block-start: auto;
+
+            font-weight: 500;
+            font-size: 13px;
+            text-decoration: underline !important;
+            text-transform: capitalize;
+            color: $main-color;
+
+            border: none;
+            padding: 0;
+        }
+    }
+}
