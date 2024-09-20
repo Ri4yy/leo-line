@@ -1,0 +1,49 @@
+.recommend-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    @media(max-width: $breakpoint1024) {
+        margin-top: 8px;
+    }
+
+    &--arrow {
+        margin-top: 16px;
+
+        & .recommend-list__item {
+            
+            &::before {
+                content: url(../assets/img/icons/arrow-list.svg);
+            }
+        }
+    }
+    &--check {
+        & .recommend-list__item {
+            font-size: 14px;
+            align-items: start;
+
+            &::before {
+                content: url(../assets/img/icons/check.svg);
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 162%;
+        color: $main-text;
+        padding-left: 10px;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 14px;
+        }
+        @media(max-width: $breakpoint768) {
+            gap: 10px;
+        }
+    }
+}

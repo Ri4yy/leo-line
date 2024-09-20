@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Поиск по сайту</title>
+    <title>PDF каталоги</title>
 </head>
 <body>
     <header class="header">
@@ -27,7 +27,7 @@
                             <a href="information.html" class="menu-nav__link">информация</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="pdf.html" class="menu-nav__link">PDF каталоги</a>
+                            <a href="pdf.html" class="menu-nav__link menu-nav__link--active">PDF каталоги</a>
                         </li>
                         <li class="menu-nav__item">
                             <a href="advantages.html" class="menu-nav__link">Преимущества LEOLINE</a>
@@ -94,82 +94,64 @@
                             <a href="../index.html" class="breadcrumb__link">Главная</a>
                         </li>
                         <li class="breadcrumb__item">
-                            <span class="breadcrumb__link breadcrumb__link--active">Поиск по сайту</span>
+                            <span class="breadcrumb__link breadcrumb__link--active">информация</span>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <span class="breadcrumb__link breadcrumb__link--active">PDF каталоги</span>
                         </li>
                     </ul>
-                    <p class="breadcrumb__title">поиск по сайту</p>
+                    <p class="breadcrumb__title">PDF каталоги</p>
                 </div>
             </div>
         </div>
+        
+        <section class="section">
+            <div class="container">
+                <ul class="information-tabs">
+                    <li class="information-tabs__item">
+                        <a href="information.html" class="information-tabs__link">документы</a>
+                    </li>
+                    <li class="information-tabs__item">
+                        <a href="#" class="information-tabs__link information-tabs__link--active">PDF каталоги</a>
+                    </li>
+                    <li class="information-tabs__item">
+                        <a href="bank.html" class="information-tabs__link">банк знаний</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
         <section class="section section--top">
-            <div class="search">
-                <div class="search__top">
-                    <div class="search-title">
-                        <input type="text" name="search" class="search-title__input" placeholder="Поиск товара">
-                    </div>
-                    <button class="btn search-title__btn">найти <span>товар</span></button>
-                </div>
-                <div class="search__center">
-                    <div class="search-result">
-                        <p class="search-result__title">Результаты поиска:</p>
-                        <p class="search-result__text">По запросу “Линолиум для гостиной”</p>
-                        <ul class="search-result__list">
-                            <li class="search-result__item">
-                                <a href="" class="search-result__link">Линолеум в гостиной</a>
-                                <p class="search-result__description">Функциональность и комфорт Вы знали, что линолеум способен снижать уровень отраженного звука до 21 Дб? Это возможно благодаря многослойной структуре и основе из вспененного ПВХ, а эластичность и упругость винила, обеспечат ощущение мягкости под ногами. Теперь вы сможете наслаждаться тишиной и комф</p>
-                            </li>
-                            <li class="search-result__item">
-                                <a href="" class="search-result__link">Линолеум с узорами</a>
-                                <p class="search-result__description">Функциональность и комфорт Вы знали, что линолеум способен снижать уровень отраженного звука до 21 Дб? Это возможно благодаря многослойной структуре и основе из вспененного ПВХ, а эластичность и упругость винила, обеспечат ощущение мягкости под ногами. Теперь вы сможете наслаждаться тишиной и комф</p>
-                            </li>
-                            <li class="search-result__item">
-                                <a href="" class="search-result__link">Однотонный линолеум</a>
-                                <p class="search-result__description">Функциональность и комфорт Вы знали, что линолеум способен снижать уровень отраженного звука до 21 Дб? Это возможно благодаря многослойной структуре и основе из вспененного ПВХ, а эластичность и упругость винила, обеспечат ощущение мягкости под ногами. Теперь вы сможете наслаждаться тишиной и комф</p>
-                            </li>
-                            <li class="search-result__item">
-                                <a href="" class="search-result__link">Линолеум под дерево</a>
-                                <p class="search-result__description">Функциональность и комфорт Вы знали, что линолеум способен снижать уровень отраженного звука до 21 Дб? Это возможно благодаря многослойной структуре и основе из вспененного ПВХ, а эластичность и упругость винила, обеспечат ощущение мягкости под ногами. Теперь вы сможете наслаждаться тишиной и комф</p>
-                            </li>
-                            <li class="search-result__item">
-                                <a href="" class="search-result__link">Линолеум с узорами</a>
-                                <p class="search-result__description">Функциональность и комфорт Вы знали, что линолеум способен снижать уровень отраженного звука до 21 Дб? Это возможно благодаря многослойной структуре и основе из вспененного ПВХ, а эластичность и упругость винила, обеспечат ощущение мягкости под ногами. Теперь вы сможете наслаждаться тишиной и комф</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="search__bottom">
-                    <div class="pagination">
-                        <a class="pagination__arrow">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.292893 7.29289C-0.0976314 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31946 8.07107 0.928931C7.68054 0.538407 7.04738 0.538407 6.65686 0.928931L0.292893 7.29289ZM20 7L1 7L1 9L20 9L20 7Z" fill="#797979" fill-opacity="0.3" />
-                            </svg>
-                        </a>
-                        <ul class="pagination__list">
-                            <li class="pagination__item">
-                                <a href="" class="pagination__link pagination__link--active">1</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__link">2</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__link">3</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__link">4</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__link">...</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__link">9</a>
-                            </li>
-                        </ul>
-                        <a class="pagination__arrow pagination__arrow--active">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 9H19V7H0V9Z" fill="#E8593F" />
-                            </svg>
-                        </a>
+            <div class="container">
+                <div class="pdf">
+                    <p class="pdf__title">PDF каталоги</p>
+                    <p class="pdf__subtitle">Нет времени просматривать сайт?<br>
+                        Здесь можно посмотреть и скачать каталоги и инструкции LEOLINE</p>
+                    <div class="pdf__wrapper">
+                        <div class="pdf__item">
+                            <img src="../assets/img/photo/P4JQR211.png" class="pdf__img" alt="">
+                            <div class="pdf__bottom">
+                                <p class="pdf__text">Коллекции LEOLINE 2025</p>
+                                <a href="" class="btn pdf__link">
+                                    <span>скачать</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z" fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pdf__item">
+                            <img src="../assets/img/photo/P4JQR212.png" class="pdf__img" alt="">
+                            <div class="pdf__bottom">
+                                <p class="pdf__text">Инструкция по укладке LEOLINE</p>
+                                <a href="" class="btn pdf__link">
+                                    <span>скачать</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979333 15.8043 0.588 15.413C0.196666 15.0217 0.000666667 14.5507 0 14V11H2V14H14V11H16V14C16 14.55 15.8043 15.021 15.413 15.413C15.0217 15.805 14.5507 16.0007 14 16H2Z" fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -199,7 +181,7 @@
                                     <a href="collection.html" class="footer-menu__link">коллекции</a>
                                 </li>
                                 <li class="footer-menu__list">
-                                    <a href="pdf.html" class="footer-menu__link">PDF каталоги</a>
+                                    <a href="#" class="footer-menu__link">PDF каталоги</a>
                                 </li>
                                 <li class="footer-menu__list">
                                     <a href="information.html" class="footer-menu__link">документы</a>

@@ -28,14 +28,16 @@
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding: 42px 0;
 
-        @media(max-width: $breakpoint768) {
+        @media(max-width: $breakpoint1024) {
             padding: 28px 0;
         }
 
         & .footer__right   {
-            flex-direction: column;
             row-gap: 4px;
 
+            @media(max-width: $breakpoint1024) {
+                flex-direction: column;
+            }
             @media(max-width: $breakpoint768) {
                 width: 50%;
             }

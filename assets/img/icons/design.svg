@@ -1,0 +1,25 @@
+<svg width="170" height="170" viewBox="0 0 170 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="85" cy="85" r="85" fill="white" fill-opacity="0.14"/>
+<g filter="url(#filter0_b_83_420)">
+<circle cx="85.5" cy="85.5" r="59.5" fill="#242424"/>
+</g>
+<path d="M61 55V113.5H76V55H61Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<circle cx="69" cy="105.5" r="1.5" fill="white" stroke="white"/>
+<path d="M81 71.5L88.5 59.5L101 67L81 102" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M99 79L107.5 74L115.5 86.5L81 107.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M104 98.5H119V113.5H80.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M103.5 98.5V113" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M89 107V112.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M81 72L93 79" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M85.5 92L80.5 89.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M103 94L97 84.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M90.5 101.5L88 98" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<defs>
+<filter id="filter0_b_83_420" x="-24" y="-24" width="219" height="219" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="25"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_83_420"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_83_420" result="shape"/>
+</filter>
+</defs>
+</svg>

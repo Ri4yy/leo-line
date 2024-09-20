@@ -73,4 +73,12 @@ document.addEventListener('DOMContentLoaded', () => {
             body.classList.toggle('open');
         });
     });
+
+
+    // Аккордеон
+    $('.accordion__top').click((e) => {
+        let container = $(e.target).closest('.accordion-list__item');
+        container.find('.accordion__bottom').toggleClass('open')
+        container.find('.accordion__top').toggleClass('open')
+    })
 })
