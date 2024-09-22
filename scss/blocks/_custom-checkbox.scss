@@ -41,9 +41,17 @@
         
         font-weight: 500;
         font-size: 16px;
-        line-height: 150%;
         color: $main-text;
 
+        @media(max-width: $breakpoint768) {
+            font-size: 13px;
+            line-height: 20px;
+
+            &::before {
+                width: 20px !important;
+                height: 20px !important;
+            }
+        }
         @media(max-width: $breakpoint1024) {
             font-size: 14px;
         }
@@ -80,12 +88,12 @@
 
         & .custom-checkbox-icon {
             position: absolute;
-            top: 1px;
+            top: 0;
             left: 36px;
 
             border-radius: 100px;
-            width: 22px;
-            height: 22px;
+            width: 20px;
+            height: 20px;
             background: var(--color);
 
             z-index: 2;

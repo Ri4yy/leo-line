@@ -4,6 +4,22 @@
     font-size: 13px;
     text-transform: uppercase;
     color: #fff;
+    border: 1px solid $main-color;
 
     border-radius: 100px;
+    transition: all .3s;
+
+    & svg {
+        fill: #fff;
+        transition: all .3s;
+    }
+
+    &:hover {
+        background: transparent;
+        color: $main-color;
+
+        & svg {
+            fill: $main-color;
+        }
+    }
 }

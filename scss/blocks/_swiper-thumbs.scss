@@ -8,6 +8,18 @@
     &__slide {
         cursor: pointer;
 
+        &:last-child {
+
+            &:before {
+                content: url(../assets/img/icons/360.svg);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+            }
+        }
+
         &:not(.swiper-slide-thumb-active) img {
             opacity: 0.6;
         }

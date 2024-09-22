@@ -63,6 +63,11 @@
         font-size: 16px;
         text-transform: uppercase;
         color: $black;
+        transition: all .3s;
+
+        &:hover {
+            color: $main-color;
+        }
 
         &::before {
             content: url('../assets/img/icons/phone.svg');

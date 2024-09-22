@@ -102,6 +102,12 @@
         text-transform: uppercase;
         color: #fff;
 
+        transition: all .3s;
+
+        &:hover {
+            color: $main-color;
+        }
+
         @media(max-width: $breakpoint768) {
             font-size: 15px;
         }

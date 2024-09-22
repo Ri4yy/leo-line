@@ -83,6 +83,11 @@
         font-size: 13px;
         text-transform: uppercase;
         color: #fff;
+        transition: all .3s;
+
+        &:hover {
+            background: rgba(129, 129, 129, 0.3);
+        }
 
         @media(max-width: $breakpoint1440) {
             margin-top: 16px;

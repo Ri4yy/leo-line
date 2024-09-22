@@ -7,11 +7,16 @@
     background: #f4f4f4;
     padding: 40px 30px;
 
+    
+    height: 1024px;
+    
+
     @media(max-width: $breakpoint1024) {
         padding: 28px 24px !important;
     }
-
-    height: 1024px;
+    @media(max-width: $breakpoint768) {
+        height: 100vh;
+    }
 
     & .scroll-wrapper {
         padding: 40px 30px !important;

@@ -268,6 +268,10 @@ h3 {
   font-size: 16px;
   text-transform: uppercase;
   color: #21120F;
+  transition: all 0.3s;
+}
+.header__phone:hover {
+  color: #E8593F;
 }
 .header__phone::before {
   content: url("../assets/img/icons/phone.svg");
@@ -630,7 +634,20 @@ h3 {
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
+  border: 1px solid #E8593F;
   border-radius: 100px;
+  transition: all 0.3s;
+}
+.btn svg {
+  fill: #fff;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: transparent;
+  color: #E8593F;
+}
+.btn:hover svg {
+  fill: #E8593F;
 }
 
 .hero {
@@ -1187,6 +1204,10 @@ h3 {
   font-size: 18px;
   text-transform: uppercase;
   color: #fff;
+  transition: all 0.3s;
+}
+.footer__phone:hover {
+  color: #E8593F;
 }
 @media (max-width: 768px) {
   .footer__phone {
@@ -1924,6 +1945,10 @@ h3 {
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
+  transition: all 0.3s;
+}
+.collection-description__link:hover {
+  background: rgba(129, 129, 129, 0.3);
 }
 @media (max-width: 1440px) {
   .collection-description__link {
@@ -2721,6 +2746,9 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
 }
+.sample__btn svg {
+  fill: #fff;
+}
 @media (max-width: 768px) {
   .sample__btn {
     margin-top: 14px;
@@ -2866,6 +2894,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
   transition: all 0.3s;
   border-radius: 100px;
   width: 51px;
@@ -2982,6 +3011,14 @@ h3 {
 }
 .swiper-thumbs__slide {
   cursor: pointer;
+}
+.swiper-thumbs__slide:last-child:before {
+  content: url(../assets/img/icons/360.svg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 .swiper-thumbs__slide:not(.swiper-slide-thumb-active) img {
   opacity: 0.6;
@@ -3267,12 +3304,15 @@ h3 {
 .swiper-similar__prev, .swiper-similar__next {
   cursor: pointer;
 }
+.swiper-similar__prev.swiper-button-disabled, .swiper-similar__next.swiper-button-disabled {
+  opacity: 0.5;
+}
+.swiper-similar__prev:not(.swiper-button-disabled) svg:hover, .swiper-similar__next:not(.swiper-button-disabled) svg:hover {
+  fill: #E8593F;
+}
 .swiper-similar__prev svg, .swiper-similar__next svg {
   fill: #21120F;
   transition: all 0.3s;
-}
-.swiper-similar__prev svg:hover, .swiper-similar__next svg:hover {
-  fill: #E8593F;
 }
 .swiper-similar__pagination {
   display: none;
@@ -3297,6 +3337,11 @@ h3 {
 .catalog-header {
   padding: 80px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .catalog-header {
+    padding: 30px 0;
+  }
 }
 .catalog-header__wrapper {
   display: flex;
@@ -3489,6 +3534,11 @@ h3 {
 @media (max-width: 1024px) {
   .filter {
     padding: 28px 24px !important;
+  }
+}
+@media (max-width: 768px) {
+  .filter {
+    height: 100vh;
   }
 }
 .filter .scroll-wrapper {
@@ -3884,7 +3934,8 @@ h3 {
 }
 @media (max-width: 768px) {
   .slimScroll {
-    height: 100dvh;
+    height: 100vh;
+    overflow-y: scroll;
   }
 }
 
@@ -4060,8 +4111,17 @@ h3 {
   line-height: 26px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
   color: #4E4E4E;
+}
+@media (max-width: 768px) {
+  .custom-checkbox span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .custom-checkbox span::before {
+    width: 20px !important;
+    height: 20px !important;
+  }
 }
 @media (max-width: 1024px) {
   .custom-checkbox span {
@@ -4093,11 +4153,11 @@ h3 {
 }
 .custom-checkbox--color .custom-checkbox-icon {
   position: absolute;
-  top: 1px;
+  top: 0;
   left: 36px;
   border-radius: 100px;
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   background: var(--color);
   z-index: 2;
 }

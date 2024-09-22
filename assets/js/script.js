@@ -173,4 +173,44 @@ document.addEventListener('DOMContentLoaded', () => {
             updateListVisibility();
         });
     }
+
+    // Scroll
+    let element = document.querySelector('.slimScroll');
+    if(element) {
+        let instance = new slimScroll(element, {
+            'wrapperClass': 'scroll-wrapper',
+            'scrollBarContainerClass': 'scrollBarContainer',
+            'scrollBarContainerSpecialClass': 'animate',
+            'scrollBarClass': 'scroll'
+        });
+    }
+
+    // Fancybox
+    function fancybox(container) {
+        Fancybox.bind(`[data-fancybox="${container}"]`, {
+            compact: false,
+            contentClick: "iterateZoom",
+            Images: {
+                Panzoom: {
+                    maxScale: 2,
+                },
+            },
+            wheel: "slide",
+            Toolbar: {
+                display: {
+                    left: [
+                        "infobar",
+                    ],
+                    middle: [],
+                    right: [
+                        "iterateZoom",
+                        "close",
+                    ],
+                }
+            }
+        });
+    }
+    fancybox('specification')
+    fancybox('certificate')
+    fancybox('card')
 })

@@ -142,13 +142,19 @@
     &__prev, &__next {
         cursor: pointer;
 
+        &.swiper-button-disabled {
+            opacity: .5;
+        }
+        &:not(.swiper-button-disabled) {
+            & svg {
+                &:hover {
+                    fill: $main-color;
+                }
+            }
+        }
         & svg {
             fill: #21120F;
             transition: all .3s;
-            
-            &:hover {
-                fill: $main-color;
-            }
         }
     }
     &__pagination {    
