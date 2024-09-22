@@ -74,18 +74,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    let filterMainOpen = document.querySelector('.filter-btn-more'),
-        filterMainText = filterMainOpen.querySelector('.filter-input__name'),
+    let filterMainOpen = document.querySelector('.filter-btn-more');
+
+    if(filterMainOpen) {
+        let filterMainText = filterMainOpen.querySelector('.filter-input__name'),
         filterOther = document.querySelector('.hero__wrapper');
 
-    let toggleFilter = true;
+        let toggleFilter = true;
 
-    filterMainOpen.addEventListener('click', (e) => {
-        filterOther.classList.toggle('open')
+        filterMainOpen.addEventListener('click', (e) => {
+            filterOther.classList.toggle('open')
 
-        filterMainText.textContent = toggleFilter ? 'Скрыть' : 'Еще фильтры';
-        toggleFilter = !toggleFilter;
-    })
+            filterMainText.textContent = toggleFilter ? 'Скрыть' : 'Еще фильтры';
+            toggleFilter = !toggleFilter;
+        })
+    }
 
 
     // Фильтр в каталоге
