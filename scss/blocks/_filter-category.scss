@@ -1,0 +1,95 @@
+.filter-category {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__list {
+
+        &.open {
+
+            & .filter-category__top {
+
+                & .filter-category__icon {
+                    transform: rotate(180deg);
+                }
+            }
+            & .filter-category__description {
+                margin-top: 16px;
+                grid-template-rows: 1fr;
+                border-bottom: unset;
+    
+                & .filter-properties {
+                    padding-bottom: 16px;
+                }
+            }
+        }
+        
+        &:not(:last-of-type) {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        &:last-of-type {
+            & .filter-category__description {
+                margin-top: 0;
+            }
+
+            & .filter-category__description.open {
+                margin-top: 16px;
+                
+                & .filter-properties {
+                    padding-bottom: 0;
+                }
+            }
+            &.open {
+
+                & .filter-category__description {
+                    margin-top: 16px;
+                    
+                    & .filter-properties {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        & span {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 144%;
+            color: $black;
+
+            @media(max-width: $breakpoint1024) {
+                font-size: 16px;
+            }
+        }
+    }
+    &__icon {
+        display: flex;
+        pointer-events: none;
+        transition: all .3s;
+
+    }
+    &__description {
+        margin-top: 16px;
+        gap: 20px;
+
+        display: grid;
+        grid-template-rows: 0fr;
+        overflow: hidden;
+        transition: all .3s;
+        min-height: 0;
+    }
+    &__more {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 214%;
+        text-decoration: underline;
+        color: $main-color;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,16 @@
+.modal-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__phone {
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $black;
+    }
+    &__btn {
+        margin-top: 14px;
+        padding: 14px 16px;
+    }
+}

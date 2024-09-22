@@ -5,6 +5,7 @@
 	user-select: none;
 	position: relative;
 
+
     & input[type=checkbox] {
         position: absolute;
         z-index: -1;
@@ -25,16 +26,18 @@
         }
 
         &:checked + span:before {
+            background: $main-color;
             background-image: url(../assets/img/icons/checkbox.svg);
             background-repeat: no-repeat;
-            background-position: 50%;
+            background-position: 50% 50%;
+            z-index: 5;
         }
     }
     & span {
         display: inline-block;
         position: relative; 
         padding: 0 0 0 35px; 
-        line-height: 24px;   
+        line-height: 26px;   
         
         font-weight: 500;
         font-size: 16px;
@@ -62,13 +65,64 @@
         &::before {
             content: "";
             display: inline-block;
-            width: 22px;
-            height: 22px;
+            width: 26px;
+            height: 26px;
             position: absolute;
             left: 0;
             top: 0;
-            border: 1px solid $main-text;
-            border-radius: 6px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 2px;
+            background: #fff;
+        }
+    }
+
+    &--color {
+
+        & .custom-checkbox-icon {
+            position: absolute;
+            top: 1px;
+            left: 36px;
+
+            border-radius: 100px;
+            width: 22px;
+            height: 22px;
+            background: var(--color);
+
+            z-index: 2;
+        }
+
+        & span {
+            padding: 0 0 0 68px; 
+        }
+    }
+
+    &--hero {
+
+        @media(max-width: $breakpoint1280) {
+
+            & .custom-checkbox-icon {
+                left: 30px;
+
+                width: 20px;
+                height: 20px;
+            }
+            
+            & span {
+                font-size: 13px;
+                line-height: 20px;
+
+                &::before {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            &.custom-checkbox--color {
+
+                & span {
+                    padding: 0 0 0 62px; 
+                }
+            }
         }
     }
 }

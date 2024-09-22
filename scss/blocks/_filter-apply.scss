@@ -1,0 +1,47 @@
+.filter-apply {
+    display: flex;
+    gap: 6px;
+
+    @media(max-width: $breakpoint768) {
+        overflow-x: scroll;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        padding: 6px 12px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+
+        @media(max-width: $breakpoint768) {
+            flex-shrink: 0;
+        }
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 171%;
+        color: $main-text;
+        pointer-events: none;
+    }
+    &__btn {
+        fill: #4E4E4E;
+        cursor: pointer;
+        transition: fill .3s;
+
+        &:hover {
+            fill: $main-color;
+        }
+    }
+    &__clear {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 157%;
+        text-decoration: underline;
+        color: $main-color;
+        text-align: left;
+    }
+}

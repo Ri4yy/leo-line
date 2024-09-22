@@ -1,0 +1,61 @@
+.card-table {
+
+    &__title {
+        font-family: $font-title;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: $black;
+
+        @media(max-width: $breakpoint1280) {
+            font-size: 18px;
+        }
+    }
+    &__list {
+        margin-top: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 10px;
+
+        &:nth-child(even) {
+            background: #f4f4f4;
+        }
+    }
+    &__col {
+        &:first-child > p {
+            text-align: left;
+        }
+        &:last-child > p {
+            text-align: right;
+        }
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.5;
+        color: $main-text;
+
+        @media(max-width: $breakpoint1280) {
+            font-size: 14px;
+        }
+        @media(max-width: $breakpoint768) {
+            font-size: 12px;
+        }
+    }
+
+    &__more {
+        padding: 8px 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $main-color;
+    }
+}

@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
 
-    @media(max-width: $breakpoint768) {
+    @media(max-width: $breakpoint1024) {
         aspect-ratio: 768 / 360;
     }
     @media(max-width: 650px) {
@@ -33,10 +33,46 @@
         @media(max-width: $breakpoint1280) {
             height: 48px;
         }
-        @media(max-width: $breakpoint768) {
+        @media(max-width: $breakpoint1024) {
             flex-direction: column;
             height: 96px;
             border-radius: 16px;
+        }
+
+        &.open {
+            flex-wrap: wrap;
+            border-radius: 16px;
+            height: 120px;
+
+            & .filter-input-other {
+                display: flex;
+            }
+
+            & .filter-input__btn {
+
+                @media(max-width: 1480px) {
+                    top: 124px;
+                }
+                @media(max-width: $breakpoint1280) {
+                    top: 100px;
+                }
+                @media(max-width: $breakpoint1024) {
+                    top: 148px;
+                }
+            }
+            & .filter-input-other {
+                width: 100%;
+            }
+            & .filter-input__more img {
+                transform: rotate(45deg);
+            }
+
+            @media(max-width: $breakpoint1280) {
+                height: 96px;
+            }
+            @media(max-width: $breakpoint1024) {
+                height: 144px;
+            }
         }
     }
 }

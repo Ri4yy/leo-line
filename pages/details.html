@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../assets/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../assets/libs/swiper-bundle.min.css">
+    <title>Продукция</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="btn-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="../index.html" class="logo">
+                    <img src="../assets/img/icons/logo.png" alt="">
+                </a>
+                <nav class="menu">
+                    <ul class="menu-nav">
+                        <li class="menu-nav__item">
+                            <a href="collection.html" class="menu-nav__link">коллекции</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="information.html" class="menu-nav__link">информация</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="pdf.html" class="menu-nav__link">PDF каталоги</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="advantages.html" class="menu-nav__link">Преимущества
+                                LEOLINE</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="about.html" class="menu-nav__link">о компании</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__contacts header__contacts--desktop">
+                    <a href="tel:88001234567" class="header__phone">8 800 123-45-67</a>
+                    <button class="btn header__btn">
+                        <span>заказать звонок</span>
+                        <img src="../assets/img/icons/lapa.svg" alt="">
+                    </button>
+                </div>
+                <div class="header__contacts header__contacts--mobile">
+                    <button class="header__icon">
+                        <img src="../assets/img/icons/white-search.svg" alt="">
+                    </button>
+                    <button class="header__icon">
+                        <img src="../assets/img/icons/white-phone.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="mobile-menu">
+                    <div class="mobile-menu__wrapper">
+                        <button class="close-menu">
+                            <img src="../assets/img/icons/close-menu.svg" alt="">
+                        </button>
+                        <ul class="menu-nav">
+                            <li class="menu-nav__item">
+                                <a href="collection.html" class="menu-nav__link menu-nav__link--active">коллекции</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="information.html" class="menu-nav__link">информация</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="pdf.html" class="menu-nav__link">PDF каталоги</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="about.html" class="menu-nav__link">о компании</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="laying.html" class="menu-nav__link">мнформация об укладке</a>
+                            </li>
+                            <li class="menu-nav__item">
+                                <a href="care.html" class="menu-nav__link">информация об уходе</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <div class="container">
+                <div class="breadcrumb__wrapper">
+                    <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a href="../index.html" class="breadcrumb__link">Главная</a>
+                        </li>
+                        <li class="breadcrumb__item"></li>
+                        <a href="catalog.html" class="breadcrumb__link">Продукция</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <span class="breadcrumb__link breadcrumb__link--active">Liberty Oak 544</span>
+                        </li>
+                    </ul>
+                    <p class="breadcrumb__title">Liberty Oak 544</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="section section--top">
+            <div class="container">
+                <div class="card">
+                    <div class="card__slider">
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper swiper-main">
+                            <div class="swiper-main__view">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.2498 0.333333C12.0794 0.333206 13.8734 0.839252 15.4333 1.79548C16.9932 2.75171 18.2581 4.12083 19.0881 5.75136C19.9181 7.3819 20.2808 9.21027 20.1361 11.0342C19.9914 12.8581 19.345 14.6064 18.2683 16.0857L18.0385 16.389L22.2991 20.6497C22.5106 20.8591 22.634 21.1415 22.6441 21.439C22.6542 21.7364 22.5502 22.0265 22.3534 22.2498C22.1567 22.4732 21.882 22.6128 21.5856 22.6402C21.2892 22.6677 20.9935 22.5808 20.7591 22.3973L20.6495 22.2993L16.3888 18.0387C15.1468 19.0175 13.6888 19.685 12.1363 19.9857C10.5839 20.2864 8.98202 20.2115 7.46441 19.7672C5.9468 19.3229 4.55744 18.5221 3.41225 17.4317C2.26706 16.3412 1.39925 14.9927 0.881216 13.4987C0.363182 12.0046 0.209949 10.4084 0.4343 8.84305C0.658652 7.27774 1.25408 5.78877 2.17092 4.50038C3.08775 3.21199 4.2994 2.16153 5.70477 1.43664C7.11015 0.711758 8.6685 0.333468 10.2498 0.333333ZM10.2498 2.66667C8.23858 2.66667 6.30973 3.46562 4.88758 4.88777C3.46543 6.30992 2.66647 8.23878 2.66647 10.25C2.66647 12.2612 3.46543 14.1901 4.88758 15.6122C6.30973 17.0344 8.23858 17.8333 10.2498 17.8333C12.261 17.8333 14.1899 17.0344 15.612 15.6122C17.0342 14.1901 17.8331 12.2612 17.8331 10.25C17.8331 8.23878 17.0342 6.30992 15.612 4.88777C14.1899 3.46562 12.261 2.66667 10.2498 2.66667ZM10.2498 5C10.5356 5.00004 10.8114 5.10495 11.0249 5.29483C11.2385 5.48472 11.3749 5.74637 11.4083 6.03017L11.4165 6.16667V9.08333H14.3331C14.6305 9.08366 14.9165 9.19753 15.1327 9.40166C15.349 9.60579 15.4791 9.88478 15.4965 10.1816C15.5139 10.4785 15.4174 10.7708 15.2265 10.9988C15.0356 11.2268 14.7649 11.3734 14.4696 11.4085L14.3331 11.4167H11.4165V14.3333C11.4161 14.6307 11.3023 14.9167 11.0982 15.1329C10.894 15.3492 10.615 15.4793 10.3182 15.4967C10.0213 15.5141 9.72903 15.4175 9.501 15.2267C9.27297 15.0358 9.12643 14.7651 9.09131 14.4698L9.08314 14.3333V11.4167H6.16647C5.86912 11.4163 5.5831 11.3025 5.36688 11.0983C5.15065 10.8942 5.02053 10.6152 5.00311 10.3184C4.98568 10.0215 5.08226 9.72922 5.27312 9.5012C5.46397 9.27317 5.7347 9.12662 6.02997 9.0915L6.16647 9.08333H9.08314V6.16667C9.08314 5.85725 9.20606 5.5605 9.42485 5.34171C9.64364 5.12292 9.94039 5 10.2498 5Z" />
+                                </svg>
+                            </div>
+                            <div class="swiper-wrapper swiper-main__wrapper">
+                                <div class="swiper-slide swiper-main__slide">
+                                    <img src="../assets/img/photo/adv-1.png" class="swiper-main__img" />
+                                </div>
+                                <div class="swiper-slide swiper-main__slide">
+                                    <img src="../assets/img/details/main.png" class="swiper-main__img" />
+                                </div>
+                                <div class="swiper-slide swiper-main__slide">
+                                    <img src="../assets/img/details/main.png" class="swiper-main__img" />
+                                </div>
+                                <div class="swiper-slide swiper-main__slide">
+                                    <img src="../assets/img/details/main.png" class="swiper-main__img" />
+                                </div>
+                                <div class="swiper-slide swiper-main__slide">
+                                    <img src="../assets/img/details/main.png" class="swiper-main__img" />
+                                </div>
+                                <div class="swiper-slide swiper-main__slide">
+                                    <img src="../assets/img/details/main.png" class="swiper-main__img" />
+                                </div>
+                            </div>
+                            <div class="swiper-main__pagination"></div>
+                            <div class="swiper-main__next">
+                                <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" />
+                                </svg>
+                            </div>
+                            <div class="swiper-main__prev">
+                                <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928929C7.68054 0.538405 7.04738 0.538405 6.65685 0.928929L0.292893 7.29289ZM41 7L1 7L1 9L41 9L41 7Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div thumbsSlider="" class="swiper swiper-thumbs">
+                            <div class="swiper-wrapper swiper-thumbs__wrapper">
+                                <div class="swiper-slide swiper-thumbs__slide">
+                                    <img src="../assets/img/details/main.png" class="swiper-thumbs__img" />
+                                </div>
+                                <div class="swiper-slide swiper-thumbs__slide">
+                                    <img src="../assets/img/details/main.png" class="swiper-thumbs__img" />
+                                </div>
+                                <div class="swiper-slide swiper-thumbs__slide">
+                                    <img src="../assets/img/details/main.png" class="swiper-thumbs__img" />
+                                </div>
+                                <div class="swiper-slide swiper-thumbs__slide">
+                                    <img src="../assets/img/details/main.png" class="swiper-thumbs__img" />
+                                </div>
+                                <div class="swiper-slide swiper-thumbs__slide">
+                                    <img src="../assets/img/details/main.png" class="swiper-thumbs__img" />
+                                </div>
+                                <div class="swiper-slide swiper-thumbs__slide">
+                                    <img src="../assets/img/details/main.png" class="swiper-thumbs__img" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__description">
+                        <div class="card-table">
+                            <p class="card-table__title">ИНФОРМАЦИЯ О ПРОДУКТЕ</p>
+                            <ul class="card-table__list">
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Общая толщина</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">2.00 мм</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Защитный слой</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Защитный слой</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Основа</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Вспененный ПВХ</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Класс нагрузки</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">23 - 32</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Общая толщина</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">2.00 мм</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Тиснение</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Эффект камня</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-table card-table--char">
+                            <p class="card-table__title">ТЕХНИЧЕСКИЕ СПЕЦИФИКАЦИИ</p>
+                            <ul class="card-table__list">
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Воспламеняемость</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Bfl-S1</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Класс пожарной опасности</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">KM2</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Эмиссия ЛОС</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Очень низкая эмиссия ЛОС</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Сопротивление скольжению, R</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">R9</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Остаточная деформация</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">≤0,30 mm</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Теплопроводность</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">0,25 Вт/мК</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Остаточная деформация</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">≤0,30 mm</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">Теплопроводность</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">0,25 Вт/мК</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="card-table__more">Показать еще</button>
+                        </div>
+                        <div class="card-table">
+                            <p class="card-table__title">ДОСТУПНЫЕ ШИРИНЫ</p>
+                            <ul class="card-table__list">
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">250</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">005V9013.561CT93G250</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">300</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">005V9013.561CT93G250</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">350</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">005V9013.561CT93G250</p>
+                                    </div>
+                                </li>
+                                <li class="card-table__item">
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">400</p>
+                                    </div>
+                                    <div class="card-table__col">
+                                        <p class="card-table__name">005V9013.561CT93G250</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__advantages">
+                        <div class="card-adv">
+                            <ul class="card-adv__list">
+                                <li class="card-adv__item">
+                                    <div class="card-adv__icon">
+                                        <img src="../assets/img/icons/card-air.svg" alt="">
+                                    </div>
+                                    <p class="card-adv__name">Чистый воздух</p>
+                                </li>
+                                <li class="card-adv__item">
+                                    <div class="card-adv__icon">
+                                        <img src="../assets/img/icons/card-care.svg" alt="">
+                                    </div>
+                                    <p class="card-adv__name">Простой уход</p>
+                                </li>
+                                <li class="card-adv__item">
+                                    <div class="card-adv__icon">
+                                        <img src="../assets/img/icons/card-laying.svg" alt="">
+                                    </div>
+                                    <p class="card-adv__name">Простая и быстрая укладка</p>
+                                </li>
+                                <li class="card-adv__item">
+                                    <div class="card-adv__icon">
+                                        <img src="../assets/img/icons/card-acoustics.svg" alt="">
+                                    </div>
+                                    <p class="card-adv__name">Комфортная акустика</p>
+                                </li>
+                                <li class="card-adv__item">
+                                    <div class="card-adv__icon">
+                                        <img src="../assets/img/icons/card-water.svg" alt="">
+                                    </div>
+                                    <p class="card-adv__name">Влагостойкий</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--top_xl">
+            <div class="container">
+                <div class="similar">
+                    <div class="similar__wrapper">
+                        <div class="swiper swiper-similar">
+                            <div class="swiper-similar__top">
+                                <p class="swiper-similar__title">похожие товары</p>
+                          
+                                <div class="swiper-similar__btn">
+                                    <div class="swiper-similar__prev">
+                                        <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928929C7.68054 0.538405 7.04738 0.538405 6.65685 0.928929L0.292893 7.29289ZM41 7L1 7L1 9L41 9L41 7Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-similar__next">
+                                        <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-wrapper swiper-similar__wrapper">
+                                <div class="swiper-slide swiper-similar__slide">
+                                    <div class="swiper-similar__img">
+                                        <div class="swiper-similar__link">
+                                            <img src="../assets/img/catalog/similar-1.png" alt="">
+                                            <a href="#" class="swiper-similar__more">подробнее</a>
+                                        </div>
+                                        <div class="swiper-similar__description">
+                                            <p class="swiper-similar__name">Торонто 501</p>
+                                            <ul class="swiper-similar__list">
+                                                <li class="swiper-similar__item">Ширины: 2,5 / 3 / 3,5 / 4 м</li>
+                                                <li class="swiper-similar__item">Повтор: 100 x 100 см</li>
+                                                <li class="swiper-similar__item">Планка: 100 x 16.6 см</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-similar__slide">
+                                    <div class="swiper-similar__img">
+                                        <div class="swiper-similar__link">
+                                            <img src="../assets/img/catalog/similar-2.png" alt="">
+                                            <a href="#" class="swiper-similar__more">подробнее</a>
+                                        </div>
+                                        <div class="swiper-similar__description">
+                                            <p class="swiper-similar__name">Аспин 505</p>
+                                            <ul class="swiper-similar__list">
+                                                <li class="swiper-similar__item">Ширины: 2,5 / 3 / 3,5 / 4 м</li>
+                                                <li class="swiper-similar__item">Повтор: 100 x 100 см</li>
+                                                <li class="swiper-similar__item">Планка: 100 x 14.37 см</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-similar__slide">
+                                    <div class="swiper-similar__img">
+                                        <div class="swiper-similar__link">
+                                            <img src="../assets/img/catalog/similar-3.png" alt="">
+                                            <a href="#" class="swiper-similar__more">подробнее</a>
+                                        </div>
+                                        <div class="swiper-similar__description">
+                                            <p class="swiper-similar__name">Аспин 565</p>
+                                            <ul class="swiper-similar__list">
+                                                <li class="swiper-similar__item">Ширины: 3 / 3,5 / 4 м</li>
+                                                <li class="swiper-similar__item">Повтор: 100 x 100 см</li>
+                                                <li class="swiper-similar__item">Планка: 100 x 14.37 см</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-similar__slide">
+                                    <div class="swiper-similar__img">
+                                        <div class="swiper-similar__link">
+                                            <img src="../assets/img/catalog/similar-4.png" alt="">
+                                            <a href="#" class="swiper-similar__more">подробнее</a>
+                                        </div>
+                                        <div class="swiper-similar__description">
+                                            <p class="swiper-similar__name">Дуб либерти 544</p>
+                                            <ul class="swiper-similar__list">
+                                                <li class="swiper-similar__item">Ширины: 3 / 3,5 / 4 м</li>
+                                                <li class="swiper-similar__item">Повтор: 100 x 100 см</li>
+                                                <li class="swiper-similar__item">Планка: 100 x 14.37 см</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-similar__slide">
+                                    <div class="swiper-similar__img">
+                                        <div class="swiper-similar__link">
+                                            <img src="../assets/img/catalog/similar-1.png" alt="">
+                                            <a href="#" class="swiper-similar__more">подробнее</a>
+                                        </div>
+                                        <div class="swiper-similar__description">
+                                            <p class="swiper-similar__name">Дуб либерти 544</p>
+                                            <ul class="swiper-similar__list">
+                                                <li class="swiper-similar__item">Ширины: 3 / 3,5 / 4 м</li>
+                                                <li class="swiper-similar__item">Повтор: 100 x 100 см</li>
+                                                <li class="swiper-similar__item">Планка: 100 x 14.37 см</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-similar__pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__left">
+                        <a href="../index.html" class="footer__logo">
+                            <img src="../assets/img/icons/footer-logo.png" alt="">
+                        </a>
+                        <div class="footer__contacts">
+                            <a href="tel:88001234567" class="footer__phone">8 800 123-45-67</a>
+                            <button class="btn footer__btn">
+                                <span>заказать звонок</span>
+                                <img src="../assets/img/icons/lapa.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__column">
+                            <ul class="footer-menu">
+                                <li class="footer-menu__list">
+                                    <a href="collection.html" class="footer-menu__link">коллекции</a>
+                                </li>
+                                <li class="footer-menu__list">
+                                    <a href="pdf.html" class="footer-menu__link">PDF каталоги</a>
+                                </li>
+                                <li class="footer-menu__list">
+                                    <a href="information.html" class="footer-menu__link">документы</a>
+                                </li>
+                                <li class="footer-menu__list">
+                                    <a href="bank.html" class="footer-menu__link">банк знаний</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__column">
+                            <ul class="footer-menu">
+                                <li class="footer-menu__list">
+                                    <a href="#" class="footer-menu__link">преимущества leoline</a>
+                                </li>
+                                <li class="footer-menu__list">
+                                    <a href="laying.html" class="footer-menu__link">Информация об укладке</a>
+                                </li>
+                                <li class="footer-menu__list">
+                                    <a href="care.html" class="footer-menu__link">Информация о уходе</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__row">
+                    <p class="copyright">© leoline 2024</p>
+                    <div class="footer__right">
+                        <div class="footer__column">
+                            <a href="" class="footer__link">Политика конфиденциальности</a>
+                        </div>
+                        <div class="footer__column">
+                            <a href="" class="footer__link">Настройки файлов cookie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/libs/jquery.min.js"></script>
+    <script src="../assets/libs/jquery.fancybox.min.js"></script>
+    <script src="../assets/libs/swiper-bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/swiper.js"></script>
+</body>
+
+</html>

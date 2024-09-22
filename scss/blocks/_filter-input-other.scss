@@ -1,0 +1,27 @@
+.filter-input-other {
+    display: none;
+
+    height: 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    @media(max-width: $breakpoint1280) {
+        height: 48px;
+    }
+
+    & .filter-input__item {
+        
+        &:last-of-type {
+
+            & .filter-input__body.open {
+                left: -110px;
+
+                @media(max-width: $breakpoint1280) {
+                    left: -150px;
+                }
+                @media(max-width: $breakpoint768) {
+                    left: -170px;
+                }
+            }
+        }
+    }
+}

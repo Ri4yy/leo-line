@@ -1,0 +1,15 @@
+.filter-properties {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: all .3s;
+    min-height: 0;
+    
+    &__list {
+        display: flex;
+    }
+}

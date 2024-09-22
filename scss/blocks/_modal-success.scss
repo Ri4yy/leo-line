@@ -1,0 +1,42 @@
+.modal-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__wrapper {
+        margin-top: 50px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 30px;
+        }
+    }
+    &__title {
+        font-family: $font-title;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 133%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $black;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 22px;
+        }
+    }
+    &__text {
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 162%;
+        text-align: center;
+        color: $main-text;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 12px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 14px;
+        }
+    }
+}

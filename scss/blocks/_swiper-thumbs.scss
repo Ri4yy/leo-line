@@ -1,0 +1,28 @@
+.swiper-thumbs {
+    margin-top: 9px;
+
+    @media(max-width: $breakpoint480) {
+        display: none !important;
+    }
+
+    &__slide {
+        cursor: pointer;
+
+        &:not(.swiper-slide-thumb-active) img {
+            opacity: 0.6;
+        }
+
+        &.swiper-slide-thumb-active > img {
+            border: 1px solid $main-color;
+        }
+    }
+    &__img {
+        border-radius: 6px;
+        height: 160px;
+        object-fit: cover;
+
+        @media(max-width: $breakpoint1440) {
+            height: auto;
+        }
+    }
+}

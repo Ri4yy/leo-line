@@ -1,0 +1,33 @@
+.modal-search {
+    height: 50px;
+
+    position: relative;
+    display: flex;
+    flex: auto;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+
+    &__input {
+        height: 100%;
+        width: 100%;
+        padding: 0 30px 0 50px;
+
+        @media(max-width: $breakpoint768) {
+            padding: 0 20px 0 48px;
+        }
+
+        &::placeholder {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 107%;
+            color: #ababab;
+        }
+    }
+    &__submit {
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        transform: translateY(-50%);
+    }
+}

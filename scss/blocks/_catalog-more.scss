@@ -1,0 +1,33 @@
+.catalog-more {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(max-width: 860px) {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__btn {
+        padding: 16px 24px;
+
+        @media(max-width: $breakpoint480) {
+            width: 100%;
+        }
+    }
+
+    &__count {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 157%;
+        text-align: right;
+        color: #797979;
+
+        @media(max-width: 860px) {
+            text-align: center;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 12px;
+        }
+    }
+}

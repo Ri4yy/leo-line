@@ -1,5 +1,5 @@
 .modal {
-    $modal-width: 1080px;
+    $modal-width: 526px;
 
     opacity: 0;
 
@@ -27,62 +27,75 @@
             max-width: $modal-width;
             width: 100%;
     
-            @media(max-width: calc($modal-width + 20px)) {
-                max-width: 98vw;
-            }
             @media(max-width: $breakpoint768) {
-                max-width: 100%;
+                width: min(92%, $modal-width);
             }
+        }
+        &--success {
+            max-width: $modal-width;
+            width: 100%;
+    
+            @media(max-width: $breakpoint768) {
+                width: min(92%, $modal-width);
+            }
+        }
+        &--small {
+            top: 170px;
+            transform: translateY(0);
+            width: min(90%, $modal-width);
+            height: 156px;
         }
     }
 
     &__wrapper {
         position: relative;
-        background: $main-color;
+        background: #fff;
         border-radius: 40px;
 
         &--form {
-            padding: 60px;
+            padding: 50px 100px;
 
-            @media(max-width: $breakpoint1024) {
-                padding: 40px;
-            }
             @media(max-width: $breakpoint768) {
-                padding: 95px 20px;
-                border-radius: 0;
+                border-radius: 10px;
+                padding: 40px 24px;
             }
-            @media(max-width: $breakpoint480) {
-                min-height: 100dvh;
+        }
+        &--success {
+            padding: 100px 60px;
+
+            @media(max-width: $breakpoint768) {
+                border-radius: 10px;
+                padding: 110px 50px;
             }
+            @media(max-width: $breakpoint375) {
+                padding: 110px 30px;
+            }
+        }
+        &--small {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 10px;
+            height: inherit;
+        }
+        &--search {
+            padding: 0 20px;
         }
     }
 
-    &__header {
-        width: calc((640px / 960px) * 100%);
+    &__title {
+        font-family: $font-title;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 133%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $black;
 
         @media(max-width: $breakpoint768) {
-            width: 100%;
-        }
-    }
-    &__title {
-        @media(max-width: $breakpoint1024) {
-            font-size: 36px;
-        }
-    }
-    &__text {
-        margin-top: 20px;
-
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 150%;
-        color: $main-text;
-
-        @media(max-width: $breakpoint1024) {
-            margin-top: 10px;
-            font-size: 16px;
-        }
-        @media(max-width: $breakpoint480) {
-            font-size: 14px;
+            font-size: 22px;
         }
     }
     &::before {
@@ -94,7 +107,7 @@
         bottom: 0;
         width: 100vw;
         height: 100%;
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.7);
         backdrop-filter: blur(3px);
         z-index: 7;
         pointer-events: none;
@@ -104,15 +117,12 @@
 .close-modal {
     display: flex;
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 34px;
+    right: 35px;
 
-    @media(max-width: $breakpoint768) {
-        width: 12px;
-    }
     @media(max-width: $breakpoint480) {
-        top: 24px;
-        right: 24px;
+        top: 18px;
+        right: 18px;
     }
 }
 

@@ -2,10 +2,9 @@
     display: flex;
     flex: auto;
 
-    height: auto;
-    // width: min(100%, 430px);
+    height: 60px;
 
-    @media(max-width: $breakpoint768) {
+    @media(max-width: $breakpoint1280) {
         height: 48px;
     }
 

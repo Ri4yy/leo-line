@@ -1,0 +1,44 @@
+.slimScroll {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    height: 1024px; 
+    width: inherit;
+    padding: 40px 30px;
+
+    @media(max-width: $breakpoint768) {
+        height: 100dvh;
+    }
+}
+
+.scroll-wrapper + .scrollBarContainer{
+    background: #ececec;
+}
+
+.scrollBarContainer.animate .scroll{
+    transition: 2s opacity ease;
+    -ms-transition: 2s opacity ease;
+    opacity: 0;
+}
+.scrollBarContainer:hover .scroll{
+    opacity: 0.5;
+    transition: none;
+    -ms-transition: none;
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.scroll{
+    border-radius: 10px;
+    background: #d4d4d4;
+    opacity: 1 !important;
+}
+.wrapper + .scrollBarContainer{
+    background-color: #eee9ee;
+}

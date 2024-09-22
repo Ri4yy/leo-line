@@ -1,0 +1,51 @@
+.card {
+    width: 100%;
+    display: flex;
+    gap: 80px;
+
+    @media(max-width: $breakpoint1440) {
+        gap: 40px;
+    }
+    @media(max-width: $breakpoint1024) {
+        flex-direction: column;
+    }
+
+    &__slider {
+        max-width: 757px;
+
+        @media(max-width: $breakpoint1440) {
+            max-width: 100%;
+            width: calc((757px / $container-width) * 100%);
+        }
+        @media(max-width: $breakpoint1024) {
+            width: 75%;
+        }
+        @media(max-width: $breakpoint1024) {
+            width: 100%;
+        }
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        // max-width: 526px;
+        // width: 100%;
+        
+        width: calc((526px / $container-width) * 100%);
+
+        @media(max-width: $breakpoint1440) {
+            width: calc((757px / $container-width) * 100%);
+        }
+        @media(max-width: $breakpoint1024) {
+            width: 100%;
+        }
+    }
+    &__advantages {
+        margin-left: auto;
+
+        @media(max-width: $breakpoint1024) {
+            width: 100%;
+        }
+    }
+}
